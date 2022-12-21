@@ -12,11 +12,10 @@ packer.startup(function(use)
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
-  use {
-    'iamcco/markdown-preview.nvim',
-    ft = 'markdown',
-    run = 'cd app && npm install'
-  }
+  use({
+    "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+  })
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
