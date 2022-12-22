@@ -29,4 +29,8 @@ packer.startup(function(use)
   use 'neovim/nvim-lspconfig' -- LSP
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+  use 'nvim-lua/plenary.nvim' -- Commmom utilites
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
+  use 'kyazdani42/nvim-web-devicons' -- File Icons
 end)
