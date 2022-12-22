@@ -16,6 +16,10 @@ packer.startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   })
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
   use 'L3MON4D3/LuaSnip' -- Snippet
   use 'onsails/lspkind-nvim' -- vscode-like pictograms
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
@@ -23,10 +27,6 @@ packer.startup(function(use)
   use 'hrsh7th/nvim-cmp' --- Completion
   use 'hoob3rt/lualine.nvim' -- Statusline
   use 'neovim/nvim-lspconfig' -- LSP
-  use {
-    'nvim-treesitter/nvim-treesitter',
-    run = ':TSUpdate'
-  }
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
 end)
