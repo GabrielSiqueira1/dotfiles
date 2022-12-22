@@ -1,6 +1,6 @@
 <div align = 'justify' >
 
-## Neovim
+# Neovim
 
 Hi! It's my neovim configuration files on Linux, flavor Ubuntu 22.04. This setup is used mostly for markdown and typescript files.
 This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config.nvim) and [craftzdog](https://github.com/craftzdog/dotfiles-public). My neovim is used for basic process.
@@ -41,7 +41,7 @@ This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config
 ---
 
 <div align = 'center'>
-  <img src = 'readme-images/secondp.png'>
+  <img src = 'readme-images/second.png'>
 </div>
 
-  </div>
+</div>
