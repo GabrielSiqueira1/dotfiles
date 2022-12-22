@@ -33,4 +33,15 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
   use 'kyazdani42/nvim-web-devicons' -- File Icons
+  use 'lervag/vimtex'
+  use {
+    "iurimateus/luasnip-latex-snippets.nvim",
+    -- replace "lervag/vimtex" with "nvim-treesitter/nvim-treesitter" if you're
+    -- using treesitter.
+    requires = { "L3MON4D3/LuaSnip", "lervag/vimtex" },
+    config = function()
+      require 'luasnip-latex-snippets'.setup({ use_treesitter = true })
+    end,
+    ft = "tex",
+  }
 end)
