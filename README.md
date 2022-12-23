@@ -44,4 +44,35 @@ This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config
   <img src = 'readme-images/second.png'>
 </div>
 
+---
+
+### Installation
+
+The functionality is based on the installation of lua-language-server and typescript-language-server typescript. 
+
+For the first one, do:
+
+```
+sudo apt install ninja-build build-essential
+
+git clone  --depth=1 https://github.com/sumneko/lua-language-server
+cd lua-language-server
+git submodule update --depth 1 --init --recursive
+
+cd 3rd/luamake
+./compile/install.sh
+cd ../..
+./3rd/luamake/luamake rebuild
+
+echo 'export PATH="${HOME}/.config/lsp/lua-language-server/bin:${PATH}"' >> ~/.bashrc
+source ~/.bashrc
+exec $SHELL
+```
+
+For the second one, do:
+
+```
+sudo npm install -g typescript-language-server typescript
+```
+
 </div>
