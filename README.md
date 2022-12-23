@@ -1,9 +1,9 @@
 <div align = 'justify' >
 
-# Neovim
+# Configuration
 
-Hi! It's my neovim configuration files on Linux, flavor Ubuntu 22.04. This setup is used mostly for markdown and typescript files.
-This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config.nvim) and [craftzdog](https://github.com/craftzdog/dotfiles-public). My neovim is used for basic process.
+Hi! It's my neovim configuration files on POP.OS 20.04. This setup is used mostly for markdown, typescript and small size files.
+This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config.nvim) and [craftzdog](https://github.com/craftzdog/dotfiles-public). 
 
 ```
 .
@@ -46,11 +46,36 @@ This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config
 
 ---
 
-### Installation
+## Neovim
 
-The functionality is based on the installation of lua-language-server and typescript-language-server typescript. 
+On linux, the installation of neovim is based in:
 
-For the first one, do:
+```
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage
+
+./nvim.appimage --appimage-extract
+./squashfs-root/AppRun --version
+
+# Optional: exposing nvim globally.
+sudo mv squashfs-root /
+sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
+nvim
+```
+
+## Language Server
+
+For Java, I used jdt (Eclipse), for Typescript, typescript (Sumneko)
+
+```
+# This installation is based in https://github.com/lxyoucan/nvim-as-java-ide
+
+mkdir -p ~/.local/share/nvim/lsp/jdt-language-server/workspace/folder
+cd ~/.local/share/nvim/lsp/jdt-language-server
+wget https://download.eclipse.org/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz
+tar -zxvf jdt-language-server-1.9.0-202203031534.tar.gz
+```
 
 ```
 sudo apt install ninja-build build-essential
