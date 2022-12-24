@@ -44,4 +44,5 @@ packer.startup(function(use)
     end,
     ft = "tex",
   }
+
 end)

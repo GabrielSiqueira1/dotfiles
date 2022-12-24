@@ -1,6 +1,6 @@
 <div align = 'justify' >
 
-# Configuration
+# Setup - Neovim
 
 Hi! It's my neovim configuration files on POP.OS 20.04. This setup is used mostly for markdown, typescript and small size files.
 This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config.nvim) and [craftzdog](https://github.com/craftzdog/dotfiles-public). 
@@ -64,18 +64,18 @@ sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 nvim
 ```
 
+## Packer
+
+For the installation of plugins, we need of packer.
+
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
 ## Language Server
 
-For Java, I used jdt (Eclipse), for Typescript, typescript (Sumneko)
-
-```
-# This installation is based in https://github.com/lxyoucan/nvim-as-java-ide
-
-mkdir -p ~/.local/share/nvim/lsp/jdt-language-server/workspace/folder
-cd ~/.local/share/nvim/lsp/jdt-language-server
-wget https://download.eclipse.org/jdtls/milestones/1.9.0/jdt-language-server-1.9.0-202203031534.tar.gz
-tar -zxvf jdt-language-server-1.9.0-202203031534.tar.gz
-```
+For Lua:
 
 ```
 sudo apt install ninja-build build-essential
@@ -94,7 +94,7 @@ source ~/.bashrc
 exec $SHELL
 ```
 
-For the second one, do:
+For Typescript:
 
 ```
 sudo npm install -g typescript-language-server typescript
