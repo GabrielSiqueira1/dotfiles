@@ -2,7 +2,7 @@
 
 # Setup - Neovim
 
-Hi! It's my neovim configuration files on POP.OS 20.04. This setup is used mostly for markdown, typescript and small size files.
+Hi! It's my neovim configuration files on POP.OS 22.04. This setup is used mostly for markdown, typescript and small size files.
 This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config.nvim) and [craftzdog](https://github.com/craftzdog/dotfiles-public). 
 
 ```
@@ -39,12 +39,18 @@ This configuration is inspired by [Jia Jia](https://github.com/mathjiajia/config
 </div>
 
 ---
+---
 
 <div align = 'center'>
   <img src = 'readme-images/second.png'>
 </div>
 
 ---
+---
+
+<div align = 'center'>
+  <img src = 'readme-images/thrid.png'>
+</div>
 
 ## Neovim
 
@@ -83,12 +89,16 @@ sudo apt install ninja-build build-essential
 git clone  --depth=1 https://github.com/sumneko/lua-language-server
 cd lua-language-server
 git submodule update --depth 1 --init --recursive
+```
 
+```
 cd 3rd/luamake
 ./compile/install.sh
 cd ../..
 ./3rd/luamake/luamake rebuild
+```
 
+```
 echo 'export PATH="${HOME}/.config/lsp/lua-language-server/bin:${PATH}"' >> ~/.bashrc
 source ~/.bashrc
 exec $SHELL
