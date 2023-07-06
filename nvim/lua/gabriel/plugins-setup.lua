@@ -35,7 +35,12 @@ return require('packer').startup(function(use)
   -- Commentary
   use 'numToStr/Comment.nvim'
 
+  -- Explorer
+  use 'nvim-tree/nvim-tree.lua'
+
   use 'nvim-lua/plenary.nvim'
+
+  use 'xiyaowong/transparent.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
