@@ -5,3 +5,7 @@ require("gabriel.plugins-setup")
 require("gabriel.core.options")
 require("gabriel.core.keymaps")
 require("gabriel.core.colorscheme")
+
+-- Plugins
+
+require("gabriel.plugin.comment")

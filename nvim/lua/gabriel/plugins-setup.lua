@@ -35,6 +35,8 @@ return require('packer').startup(function(use)
   -- Commentary
   use 'numToStr/Comment.nvim'
 
+  use 'nvim-lua/plenary.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
