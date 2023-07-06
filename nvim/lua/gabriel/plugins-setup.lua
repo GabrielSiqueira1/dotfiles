@@ -27,6 +27,14 @@ return require('packer').startup(function(use)
   use 'christoomey/vim-tmux-navigator' -- Tmux and split window navigation
 
   use 'szw/vim-maximizer' -- Maximizes and restores current window
+
+  -- Essential plugins
+  use 'tpope/vim-surround' -- Surround words -> ys, ds, cs
+  use 'vim-scripts/ReplaceWithRegister' 
+
+  -- Commentary
+  use 'numToStr/Comment.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
