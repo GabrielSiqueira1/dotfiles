@@ -22,7 +22,11 @@ vim.cmd([[
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
     
-  use 'bluz71/vim-nightfly-guicolors' 
+  use 'bluz71/vim-nightfly-guicolors' -- Colorscheme
+
+  use 'christoomey/vim-tmux-navigator' -- Tmux and split window navigation
+
+  use 'szw/vim-maximizer' -- Maximizes and restores current window
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

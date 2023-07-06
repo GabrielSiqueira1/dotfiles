@@ -20,3 +20,9 @@ keymap.set("n", "<leader>to", ":tabnew<CR>") -- Abertura de uma nova guia
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- Fechamento de uma guia
 keymap.set("n", "<leader>tp", ":tabp<CR>") -- Mudar para aba anterior
 keymap.set("n", "<leader>tn", ":tabn<CR>") -- Mudar para aba posterior
+
+-- Ajustes de teclas para os plugins
+
+-- vim-maximizer
+keymap.set("n", "<leader>sm", ":MaximizerToggle<CR>")
+
