@@ -1,4 +1,7 @@
--- init.lua
+require("gabriel.plugins-setup")
 
-require('settings')	-- lua/settings.lua
-require('maps')         -- lua/maps.lua
+-- Core
+
+require("gabriel.core.options")
+require("gabriel.core.keymaps")
+require("gabriel.core.colorscheme")
