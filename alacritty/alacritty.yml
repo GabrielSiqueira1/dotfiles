@@ -1,0 +1,15 @@
+# Font configuration
+
+font:
+  size: 12.0
+  normal:
+    family: SFMono Nerd Font
+    style: Medium
+  bold:
+    family: SFMono Nerd Font
+  italic:
+    family: SFMono Nerd Font
+
+# Background
+window:
+  opacity: 0.85
